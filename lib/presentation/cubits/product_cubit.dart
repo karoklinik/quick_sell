@@ -1,7 +1,5 @@
-import 'dart:convert';
-
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:quick_sell/data/repositories/product_repository.dart';
 import 'package:quick_sell/domain/models/product.dart';
 
 // Cubits states
@@ -19,18 +17,14 @@ class ProductError extends ProductState {}
 
 // Cubit
 class ProductCubit extends Cubit<ProductState> {
-  ProductCubit() : super(ProductLoading());
+  final ProductRepository repository;
+
+  ProductCubit(this.repository) : super(ProductLoading());
 
   void loadProducts() async {
     try {
       emit(ProductLoading());
-      final String data = await rootBundle.loadString('assets/products.json');
-      final List<dynamic> jsonList = json.decode(data);
-
-      final List<Product> allProducts = jsonList
-          .map((dynamic productJson) => Product.fromJson(productJson))
-          .toList();
-
+      final List<Product> allProducts = await repository.getProducts();
       emit(ProductLoaded(allProducts.take(20).toList()));
     } catch (e) {
       emit(ProductError());
