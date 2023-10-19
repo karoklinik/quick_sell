@@ -110,6 +110,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "ffi",
+      "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/ffi-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "file",
       "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/file-6.1.4",
       "packageUri": "lib/",
@@ -150,6 +156,18 @@
       "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/glob-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.15"
+    },
+    {
+      "name": "hive",
+      "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/hive-2.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "hive_flutter",
+      "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/hive_flutter-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "lints",
@@ -204,6 +222,54 @@
       "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/path-1.8.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "path_provider",
+      "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/path_provider-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "path_provider_android",
+      "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/path_provider_android-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "path_provider_foundation",
+      "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/path_provider_foundation-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "path_provider_linux",
+      "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "path_provider_platform_interface",
+      "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "path_provider_windows",
+      "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "platform",
+      "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/platform-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "plugin_platform_interface",
+      "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "provider",
@@ -284,6 +350,18 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "win32",
+      "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/win32-4.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "xdg_directories",
+      "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/xdg_directories-1.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "yaml",
       "rootUri": "file:///Users/kklinik/.pub-cache/hosted/pub.dartlang.org/yaml-3.1.1",
       "packageUri": "lib/",
@@ -296,7 +374,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-10-11T10:20:24.142318Z",
+  "generated": "2023-10-19T10:49:29.191231Z",
   "generator": "pub",
   "generatorVersion": "2.19.0-146.2.beta"
 }
