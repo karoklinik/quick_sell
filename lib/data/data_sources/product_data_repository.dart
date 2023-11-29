@@ -15,14 +15,15 @@ class JsonProductRepository implements ProductRepository {
     final localProducts = await localDataSource.getLocalProducts();
 
     if (localProducts.isNotEmpty) {
-      return localProducts;
+      return List<Product>.from(localProducts);
     } else {
-      final String data = await rootBundle.loadString('assets/products.json');
-      final List<dynamic> jsonList = json.decode(data);
+      final data = await rootBundle.loadString('assets/products.json');
+      final List<dynamic> jsonList =
+          json.decode(data); // Dodaj jawnie deklarowany typ listy
 
-      final List<Product> products = jsonList
+      final products = jsonList
           .map((dynamic productJson) => Product.fromJson(productJson))
-          .toList();
+          .toList(); // Rzutowanie na List<Product>
 
       await localDataSource.saveLocalProducts(products);
 
@@ -33,7 +34,7 @@ class JsonProductRepository implements ProductRepository {
   @override
   Future<List<Product>> getLocalProducts() async {
     final localProducts = await localDataSource.getLocalProducts();
-    return localProducts;
+    return List<Product>.from(localProducts);
   }
 }
 
